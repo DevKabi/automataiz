@@ -21,7 +21,7 @@ function initLiveDashboardStats() {
   if (!actionsCounter && !revenueCounter) return;
 
   let baseActions = 142890;
-  let baseRevenue = 842500;
+  let baseRevenue = 6850000;
   let baseBots = 24;
 
   setInterval(() => {
@@ -29,14 +29,14 @@ function initLiveDashboardStats() {
     const actionDelta = Math.floor(Math.random() * 5) + 1;
     baseActions += actionDelta;
     if (actionsCounter) {
-      actionsCounter.textContent = baseActions.toLocaleString();
+      actionsCounter.textContent = baseActions.toLocaleString('en-IN');
     }
 
     // Occasional revenue bump
     if (Math.random() > 0.6) {
-      baseRevenue += Math.floor(Math.random() * 450) + 150;
+      baseRevenue += Math.floor(Math.random() * 35000) + 12000;
       if (revenueCounter) {
-        revenueCounter.textContent = '$' + baseRevenue.toLocaleString();
+        revenueCounter.textContent = '₹' + baseRevenue.toLocaleString('en-IN');
       }
     }
   }, 2200);
@@ -48,10 +48,10 @@ function initChatStreamSimulation() {
   if (!chatContainer) return;
 
   const sampleConversations = [
-    { sender: 'user', text: 'Hi! Can you send pricing & verify HIPAA compliance for our 45-physician practice?' },
-    { sender: 'ai', text: '⚡ Automataiz Clinical AI: Absolutely. We are SOC2 Type II & HIPAA certified with end-to-end BAA. I have generated a customized deployment plan for 45 seats.' },
-    { sender: 'user', text: 'Great, can we automate patient reminders on WhatsApp?' },
-    { sender: 'ai', text: '✅ Yes! Automated WhatsApp workflows reduce no-shows by 44%. Shall I book a 15-min technical onboarding session?' }
+    { sender: 'user', text: 'Hi! Can you send pricing & verify security compliance for our 45-member business?' },
+    { sender: 'ai', text: '⚡ Automataiz Clinical & Enterprise AI: Absolutely. We provide complete SOC2 Type II, ISO 27001 & DPDP Act compliance. I have generated a customized deployment plan for 45 seats.' },
+    { sender: 'user', text: 'Great, can we automate customer workflows and GST invoicing on WhatsApp?' },
+    { sender: 'ai', text: '✅ Yes! Automated WhatsApp workflows reduce follow-up delays by 85% and auto-generate GST e-invoices instantly. Shall I book a 15-min technical onboarding session?' }
   ];
 
   let step = 0;
@@ -102,9 +102,9 @@ function initRoiCalculator() {
     const teamSize = parseInt(teamSlider.value, 10);
     const toolSpendMonthly = parseInt(toolSpendSlider.value, 10);
 
-    // Update labels
+    // Update labels in INR format
     if (teamValDisplay) teamValDisplay.textContent = `${teamSize} Members`;
-    if (toolValDisplay) toolValDisplay.textContent = `$${toolSpendMonthly.toLocaleString()}/mo`;
+    if (toolValDisplay) toolValDisplay.textContent = `₹${toolSpendMonthly.toLocaleString('en-IN')}/mo`;
 
     // Calculation formulas:
     // Average hours saved per employee per week = 8.5 hours
@@ -114,17 +114,17 @@ function initRoiCalculator() {
     // SaaS stack consolidation savings: 65% of existing tool spend saved
     const toolSavingsAnnual = toolSpendMonthly * 12 * 0.65;
     
-    // Labor efficiency savings ($40/hour value)
-    const laborSavingsAnnual = annualHoursSaved * 38 * 0.45;
+    // Labor efficiency savings in INR (₹450/hour executive time value)
+    const laborSavingsAnnual = annualHoursSaved * 450 * 0.50;
 
     const totalAnnualSavings = Math.round(toolSavingsAnnual + laborSavingsAnnual);
     const multiplier = (3.2 + (teamSize * 0.05)).toFixed(1);
 
     if (annualSavingsDisplay) {
-      annualSavingsDisplay.textContent = `$${totalAnnualSavings.toLocaleString()}`;
+      annualSavingsDisplay.textContent = `₹${totalAnnualSavings.toLocaleString('en-IN')}`;
     }
     if (hoursSavedDisplay) {
-      hoursSavedDisplay.textContent = `${annualHoursSaved.toLocaleString()} hrs/yr`;
+      hoursSavedDisplay.textContent = `${annualHoursSaved.toLocaleString('en-IN')} hrs/yr`;
     }
     if (efficiencyMultiplier) {
       efficiencyMultiplier.textContent = `${multiplier}x ROI`;
