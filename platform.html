@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Architecture & Modules | AUTOMATAIZ AI Business OS</title>
+  <meta name="description" content="Explore the 8 native modules, 4-layer AI architecture, visual workflow engine, and enterprise security powering the Automataiz AI Business Operating System.">
+  
+  <!-- Favicon PNG -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SEO Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Automataiz",
+    "legalName": "AWAZME CONSULTING SERVICE",
+    "url": "https://automataiz.com",
+    "sameAs": [
+      "https://automataiz.in",
+      "https://facebook.com/automataiz",
+      "https://instagram.com/automataiz.saas",
+      "https://linkedin.com/company/automataiz",
+      "https://youtube.com/channel/UCzLu81z2ZEkQi4cWU3501CA",
+      "https://x.com/Automataiz"
+    ],
+    "logo": "https://automataiz.com/assets/logo.png",
+    "foundingDate": "2025-01",
+    "taxID": "21BIIPK9304G1ZI",
+    "email": "hello@automataiz.com",
+    "telephone": "+918338091603",
+    "description": "AI Business Operating System (AI-BOS) built for modern MSMEs to unify Marketing, Sales, Operations, Finance, Communication and AI in one platform.",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "name": "Corporate Office",
+        "streetAddress": "OMM City, Mancheswar",
+        "addressLocality": "Bhubaneswar",
+        "addressRegion": "Odisha",
+        "postalCode": "751010",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Registered Office",
+        "streetAddress": "Bandhamundi, Rasgobindapur, Santoshpur",
+        "addressLocality": "Mayurbhanj",
+        "addressRegion": "Odisha",
+        "postalCode": "756030",
+        "addressCountry": "IN"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="bg-grid-overlay"></div>
+  <div class="ambient-glow-bg glow-green" style="top: 10%; left: 15%; width: 500px; height: 500px;"></div>
+  <div class="ambient-glow-bg glow-yellow" style="top: 50%; right: 10%; width: 550px; height: 550px;"></div>
+
+  <!-- Header -->
+  <header class="site-nav">
+    <div class="container-wide nav-inner">
+      <a href="index.html" class="brand-logo" aria-label="AUTOMATAIZ Home">
+        <img src="assets/logo.png" alt="AUTOMATAIZ – The AI Business OS" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="platform.html" class="nav-link active">Platform</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="company.html" class="nav-link">Company</a></li>
+          <li><a href="founder.html" class="nav-link">Founder</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="pricing.html" class="btn btn-secondary btn-sm">View Pricing</a>
+        <button class="btn btn-primary btn-sm btn-book-demo" data-modal="demoModal">
+          Book a Demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <button class="mobile-toggle" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="platform.html" class="nav-link active">Platform</a></li>
+        <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+        <li><a href="industries.html" class="nav-link">Industries</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="company.html" class="nav-link">Company</a></li>
+        <li><a href="founder.html" class="nav-link">Founder</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <button class="btn btn-primary btn-book-demo" data-modal="demoModal" style="width: 100%;">Book a Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="section" style="padding-top: 140px; padding-bottom: 60px;">
+    <div class="container text-center">
+      <div class="section-header">
+        <span class="badge-tag green"><span class="pulse-dot"></span> The Autonomous Core</span>
+        <h1>Engineered for Total Operational Autonomy</h1>
+        <p class="lead">
+          A unified, high-throughput AI Business Operating System designed from the ground up to replace fragmented legacy SaaS stacks with sovereign multi-agent intelligence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Layer Architecture Diagram -->
+  <section class="section" style="background: var(--bg-secondary); padding-top: 50px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag yellow"><span class="pulse-dot yellow"></span> System Topology</span>
+        <h2>The 4-Layer Autonomous Architecture</h2>
+        <p>
+          How Automataiz achieves sub-second reactive execution across all customer touchpoints.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Layer 1 -->
+        <div class="card-glass" style="border-left: 4px solid var(--green-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #19B000; text-transform: uppercase;">Layer 01 // Multi-Agent Swarm Intelligence</span>
+            <span class="badge-tag green" style="margin: 0; padding: 2px 10px; font-size: 0.72rem;">Cognitive Layer</span>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Autonomous Specialist AI Agents</h3>
+          <p style="font-size: 0.925rem; color: var(--text-secondary);">
+            Orchestrated LLM swarms equipped with tool execution, contextual RAG memory, and dynamic self-reflection. Agents qualify leads, draft contracts, reconcile invoices, and reply to client inquiries in milliseconds.
+          </p>
+        </div>
+
+        <!-- Layer 2 -->
+        <div class="card-glass" style="border-left: 4px solid var(--yellow-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #FFC61A; text-transform: uppercase;">Layer 02 // Native Event & Workflow Engine</span>
+            <span class="badge-tag yellow" style="margin: 0; padding: 2px 10px; font-size: 0.72rem;">Execution Engine</span>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Zero-Latency Event Fabric</h3>
+          <p style="font-size: 0.925rem; color: var(--text-secondary);">
+            Real-time event broker executing asynchronous multi-branch automations. Eliminates brittle third-party webhooks (e.g. Zapier) by running directly inside the central transaction loop.
+          </p>
+        </div>
+
+        <!-- Layer 3 -->
+        <div class="card-glass" style="border-left: 4px solid var(--green-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #19B000; text-transform: uppercase;">Layer 03 // Sovereign Unified Data Fabric</span>
+            <span class="badge-tag green" style="margin: 0; padding: 2px 10px; font-size: 0.72rem;">Data Fabric</span>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Single Source of Customer Truth (SSOT)</h3>
+          <p style="font-size: 0.925rem; color: var(--text-secondary);">
+            Unified relational graph storing contacts, conversations, deals, ledgers, and audit logs. Zero duplicate records. 100% synchronized state across every module in real time.
+          </p>
+        </div>
+
+        <!-- Layer 4 -->
+        <div class="card-glass" style="border-left: 4px solid var(--yellow-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #FFC61A; text-transform: uppercase;">Layer 04 // Omnichannel Gateway</span>
+            <span class="badge-tag yellow" style="margin: 0; padding: 2px 10px; font-size: 0.72rem;">I/O Gateway</span>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Native Communication Rails</h3>
+          <p style="font-size: 0.925rem; color: var(--text-secondary);">
+            Direct carrier connections, official Meta WhatsApp Cloud API gateway, high-deliverability SMTP/IMAP servers, and high-frequency webhook listeners.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Module Deep Dive Tabs -->
+  <section class="section" data-tabs>
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag green"><span class="pulse-dot"></span> Interactive Explorer</span>
+        <h2>Deep Dive Into the 8 Sovereign Modules</h2>
+        <p class="lead">
+          Click through any module below to inspect live capabilities, architecture schemas, and business workflows.
+        </p>
+      </div>
+
+      <!-- Tab Controls -->
+      <div class="tab-controls">
+        <button class="tab-btn active" data-target="#tab-marketing">Marketing</button>
+        <button class="tab-btn" data-target="#tab-sales">Sales</button>
+        <button class="tab-btn" data-target="#tab-crm">CRM</button>
+        <button class="tab-btn" data-target="#tab-whatsapp">WhatsApp</button>
+        <button class="tab-btn" data-target="#tab-automation">Automation</button>
+        <button class="tab-btn" data-target="#tab-finance">Finance</button>
+        <button class="tab-btn" data-target="#tab-community">Community</button>
+        <button class="tab-btn" data-target="#tab-ai">AI Swarm</button>
+      </div>
+
+      <!-- Tab 1: Marketing -->
+      <div class="tab-content-panel active" id="tab-marketing">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag green">Module 01</div>
+            <h2>Autonomous Multi-Channel Marketing Engine</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Transform your marketing from manual campaign scheduling to predictive, self-optimizing autonomous funnels.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> AI Audience Segmentation based on buying intent & past interactions</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Cross-Channel Creative Generator (WhatsApp copy, emails, landing pages)</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-time ROAS attribution and multi-touch revenue modeling</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5);">
+            <div style="font-size: 0.8rem; color: #19B000; font-weight: 700; margin-bottom: 8px;">LIVE CAMPAIGN TELEMETRY</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">48.6% Open Rate</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">WhatsApp VIP Retargeting Sequence #829</div>
+            <div style="background: rgba(25,176,0,0.1); border: 1px solid var(--green-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #19B000; font-weight: 600;">AI Optimization Active:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">Shifted 85% of ad budget to high-intent mobile users based on real-time checkout signals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Sales -->
+      <div class="tab-content-panel" id="tab-sales">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag yellow">Module 02</div>
+            <h2>Predictive Pipeline & Deal Acceleration</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Accelerate deal velocity with AI-scored pipeline stages and instant proposal generation.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Smart Win-Probability Scoring based on conversational sentiment</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated Meeting Summaries & Action Item Extraction</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 1-Click Custom MSA & Contract Generation with e-signatures</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5); border-color: var(--yellow-border);">
+            <div style="font-size: 0.8rem; color: #FFC61A; font-weight: 700; margin-bottom: 8px;">DEAL ACCELERATION SCORE</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">94 / 100 Intent Score</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Acme Corp Enterprise Suite ($48,000 ARR)</div>
+            <div style="background: rgba(255,198,26,0.1); border: 1px solid var(--yellow-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #FFC61A; font-weight: 600;">Autonomous Next Step:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">Auto-generated security whitepaper sent to VP of Engineering after compliance question detected.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: CRM -->
+      <div class="tab-content-panel" id="tab-crm">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag green">Module 03</div>
+            <h2>360° Intelligent Customer Graph</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Never ask a customer to repeat themselves. Every WhatsApp message, email, transaction, and ticket lives on one unified timeline.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero duplicate contact records with automated fuzzy deduplication</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Contextual Memory Vector Store for each account</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automatic churn risk indicators and sentiment alerts</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5);">
+            <div style="font-size: 0.8rem; color: #19B000; font-weight: 700; margin-bottom: 8px;">UNIFIED CONTACT TIMELINE</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #FFFFFF; margin-bottom: 8px;">Dr. Robert Chen, Chief Medical Officer</div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+              <div>🟢 <strong>10:14 AM:</strong> WhatsApp inquiry regarding HIPAA BAA</div>
+              <div>🟡 <strong>10:15 AM:</strong> AI Assistant answered & attached certificate</div>
+              <div>🟢 <strong>10:22 AM:</strong> Demo scheduled for Friday 2:00 PM EST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: WhatsApp -->
+      <div class="tab-content-panel" id="tab-whatsapp">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag yellow">Module 04</div>
+            <h2>Official Meta WhatsApp Enterprise Hub</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Harness the world's #1 communication channel with 98% open rates and autonomous 2-way AI conversational voice and text agents.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Official Meta Cloud API with Green Checkmark Verification</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-Agent Shared Team Inbox with collision detection</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Interactive Quick-Reply Buttons & Native Product Catalogs</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5); border-color: var(--yellow-border);">
+            <div style="font-size: 0.8rem; color: #FFC61A; font-weight: 700; margin-bottom: 8px;">WHATSAPP ENTERPRISE SLA</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">0.8s Latency</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Direct Cloud API connection • 10,000 msg/sec capability</div>
+            <div style="background: rgba(255,198,26,0.1); border: 1px solid var(--yellow-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #FFC61A; font-weight: 600;">Autonomous Resolution Rate:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">88.4% of customer requests resolved completely without human rep intervention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: Automation -->
+      <div class="tab-content-panel" id="tab-automation">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag green">Module 05</div>
+            <h2>Native Visual Workflow Engine</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Build powerful, branching automations with zero coding. Real-time visual debugger and zero external API latency.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Over 500+ pre-built enterprise workflow templates</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Complex IF/ELSE branching with LLM semantic decision routing</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Rollback and replay capabilities for critical transaction safety</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5);">
+            <div style="font-size: 0.8rem; color: #19B000; font-weight: 700; margin-bottom: 8px;">EXECUTION ENGINE PERFORMANCE</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">99.999% Reliability</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Zero third-party middleware failure points</div>
+            <div style="background: rgba(25,176,0,0.1); border: 1px solid var(--green-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #19B000; font-weight: 600;">System Event:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">Triggered 14,200 automated onboarding sequences in 2.1 seconds with 0 errors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: Finance -->
+      <div class="tab-content-panel" id="tab-finance">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag yellow">Module 06</div>
+            <h2>Finance, Billing & Smart Ledger</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Connect your bank feeds, automate recurring invoices, track subscriptions, and simulate 90-day cash flows on autopilot.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-currency Stripe & Bank Rail integration</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Automated Smart Dunning & Payment Recovery</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> AI Expense OCR parsing & automatic chart-of-accounts allocation</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5); border-color: var(--yellow-border);">
+            <div style="font-size: 0.8rem; color: #FFC61A; font-weight: 700; margin-bottom: 8px;">FINANCIAL INTELLIGENCE</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">$0 Unreconciled</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Real-time balance sheet & P&L synchronization</div>
+            <div style="background: rgba(255,198,26,0.1); border: 1px solid var(--yellow-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #FFC61A; font-weight: 600;">Autonomous Recovery:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">Recovered $18,400 in failed credit card payments via smart WhatsApp payment links.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 7: Community -->
+      <div class="tab-content-panel" id="tab-community">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag green">Module 07</div>
+            <h2>Monetized Community & Member Hub</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Host courses, VIP mastermind tiers, discussion channels, and live events directly on your custom domain.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Fully white-labeled member mobile app & web portal</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Tiered membership paywalls tied to recurring billing</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#19B000" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> AI community moderator and automated member onboarding</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5);">
+            <div style="font-size: 0.8rem; color: #19B000; font-weight: 700; margin-bottom: 8px;">MEMBER ENGAGEMENT METRICS</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">92.4% Retention</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Over 24,000 active monthly discussion participants</div>
+            <div style="background: rgba(25,176,0,0.1); border: 1px solid var(--green-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #19B000; font-weight: 600;">Autonomous Assistant:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">AI agent answers 70% of technical community questions with direct links to documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 8: AI Assistants -->
+      <div class="tab-content-panel" id="tab-ai">
+        <div class="roi-calculator-box">
+          <div>
+            <div class="badge-tag yellow">Module 08</div>
+            <h2>Autonomous AI Swarm Orchestra</h2>
+            <p style="margin: 1rem 0 1.5rem; font-size: 1.05rem;">
+              Deploy specialized AI workers across Sales, Support, Finance, and Marketing that collaborate and hand off tasks autonomously.
+            </p>
+            <ul class="module-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Zero hallucination guardrails with citations</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Fine-tuned models with your company's SOPs and voice</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC61A" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Sub-agent delegation and autonomous multi-step execution</li>
+            </ul>
+          </div>
+          <div class="card-glass" style="background: rgba(0,0,0,0.5); border-color: var(--yellow-border);">
+            <div style="font-size: 0.8rem; color: #FFC61A; font-weight: 700; margin-bottom: 8px;">ACTIVE AGENT SWARM</div>
+            <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;">24 Swarms</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Collaborating in real time across 12 business workflows</div>
+            <div style="background: rgba(255,198,26,0.1); border: 1px solid var(--yellow-border); border-radius: var(--radius-md); padding: 12px;">
+              <span style="font-size: 0.75rem; color: #FFC61A; font-weight: 600;">Autonomous Handoff:</span>
+              <p style="font-size: 0.85rem; color: #FFFFFF; margin-top: 4px;">SDR Bot qualified lead → Handed off to Scheduling Bot → Prepared executive brief for rep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Visual Workflow Simulator -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag yellow"><span class="pulse-dot yellow"></span> Live Sandbox</span>
+        <h2>Interactive Autonomous Workflow Simulator</h2>
+        <p class="lead">
+          Click the trigger node below to test how an inbound WhatsApp lead is qualified, scored, and closed automatically.
+        </p>
+      </div>
+
+      <div class="workflow-builder">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">
+            ⚡ <em>Click the Trigger node below to fire the workflow simulator</em>
+          </span>
+          <span class="badge-tag green" style="margin: 0;">Status: Ready to Execute</span>
+        </div>
+
+        <div class="wf-canvas">
+          <!-- Node 1: Trigger -->
+          <div class="wf-node trigger trigger-actionable" style="cursor: pointer;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #FFC61A; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+              <span class="pulse-dot yellow"></span> 1. TRIGGER (CLICK ME)
+            </div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">Inbound WhatsApp Lead</div>
+            <div style="font-size: 0.775rem; color: var(--text-muted); margin-top: 4px;">Prospect messages "Book Demo"</div>
+          </div>
+
+          <div class="wf-connector"></div>
+
+          <!-- Node 2: AI Qualification -->
+          <div class="wf-node action">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #19B000; margin-bottom: 4px;">2. AI REASONING</div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">Lead Qualification Agent</div>
+            <div style="font-size: 0.775rem; color: var(--text-muted); margin-top: 4px;">Extracts budget & team size</div>
+          </div>
+
+          <div class="wf-connector"></div>
+
+          <!-- Node 3: Condition -->
+          <div class="wf-node action">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #FFC61A; margin-bottom: 4px;">3. SMART SCORING</div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">Intent Score > 85</div>
+            <div style="font-size: 0.775rem; color: var(--text-muted); margin-top: 4px;">Tags deal as High Priority</div>
+          </div>
+
+          <div class="wf-connector"></div>
+
+          <!-- Node 4: Action -->
+          <div class="wf-node action">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #19B000; margin-bottom: 4px;">4. AUTO CLOSING</div>
+            <div style="font-weight: 700; font-size: 0.95rem; color: #FFFFFF;">Instant Calendar Booking</div>
+            <div style="font-size: 0.775rem; color: var(--text-muted); margin-top: 4px;">Generates custom brief & sends invite</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Security & Compliance -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag green"><span class="pulse-dot"></span> Sovereign Trust</span>
+        <h2>Enterprise Security & Compliance</h2>
+        <p class="lead">
+          Built to satisfy the stringent requirements of Fortune 500 CISOs, healthcare networks, and global financial institutions.
+        </p>
+      </div>
+
+      <div class="modules-grid">
+        <div class="card-glass">
+          <div class="card-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>SOC2 Type II & ISO 27001</h3>
+          <p>Annual third-party audit verifying strict operational security, tenant isolation, and continuous vulnerability remediation.</p>
+        </div>
+
+        <div class="card-glass hover-yellow">
+          <div class="card-icon-box yellow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3>AES-256 & TLS 1.3 Encryption</h3>
+          <p>Zero plaintext data at rest. Military-grade envelope encryption with customer-managed KMS key options.</p>
+        </div>
+
+        <div class="card-glass">
+          <div class="card-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          </div>
+          <h3>HIPAA & GDPR Sovereign Privacy</h3>
+          <p>Full BAA execution for healthcare providers. Automated data residency routing and right-to-be-forgotten deletion workflows.</p>
+        </div>
+
+        <div class="card-glass hover-yellow">
+          <div class="card-icon-box yellow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3>Dedicated Single-Tenant VPC</h3>
+          <p>Deploy Automataiz within your private AWS, GCP, or Azure Virtual Private Cloud with dedicated compute and vector memory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section" style="padding-bottom: 6rem;">
+    <div class="container">
+      <div class="final-cta-card">
+        <span class="badge-tag green"><span class="pulse-dot"></span> Architectural Consultation</span>
+        <h2 class="hero-title">
+          Ready to Test the Platform with <br>
+          <span style="background: var(--grad-brand); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Your Company's Data?</span>
+        </h2>
+        <p>
+          Speak directly with an Automataiz Principal Solutions Architect and see how our 8 modules integrate into your infrastructure.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg btn-book-demo" data-modal="demoModal">
+            Schedule an Architectural Walkthrough
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <a href="solutions.html" class="btn btn-secondary btn-lg">Explore Industry Solutions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Footer -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;" aria-label="AUTOMATAIZ Home">
+            <img src="assets/logo.png" alt="AUTOMATAIZ – The AI Business OS" class="brand-logo-img">
+          </a>
+          <p>
+            AI Business Operating System built for modern MSMEs.<br>
+            Unify Marketing, Sales, Operations, Finance, Communication and AI in one platform.
+          </p>
+          <div style="display: flex; gap: 12px; margin: 1.25rem 0;">
+            <a href="https://linkedin.com/company/automataiz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: var(--text-muted); transition: color 0.2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="https://x.com/Automataiz" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" style="color: var(--text-muted); transition: color 0.2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg></a>
+            <a href="https://instagram.com/automataiz.saas" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="color: var(--text-muted); transition: color 0.2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="https://youtube.com/channel/UCzLu81z2ZEkQi4cWU3501CA" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="color: var(--text-muted); transition: color 0.2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            <a href="https://facebook.com/automataiz" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="color: var(--text-muted); transition: color 0.2s;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          </div>
+          <div class="system-status">
+            <span class="pulse-dot"></span>
+            <span>All AI Core Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Platform -->
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="platform.html">Platform Overview</a></li>
+            <li><a href="platform.html#ai">AI Suite</a></li>
+            <li><a href="platform.html#crm">CRM</a></li>
+            <li><a href="platform.html#automation">Automation</a></li>
+            <li><a href="platform.html#sales">Sales</a></li>
+            <li><a href="platform.html#finance">Finance</a></li>
+            <li><a href="platform.html#community">Community</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Solutions -->
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html#msmes">MSMEs</a></li>
+            <li><a href="solutions.html#healthcare">Healthcare</a></li>
+            <li><a href="solutions.html#realestate">Real Estate</a></li>
+            <li><a href="solutions.html#coaches">Coaches</a></li>
+            <li><a href="solutions.html#consultants">Consultants</a></li>
+            <li><a href="solutions.html#education">Education</a></li>
+            <li><a href="solutions.html#insurance">Insurance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="company.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="company.html#careers">Careers</a></li>
+            <li><a href="contact.html#partner">Partner Program</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Legal -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="refund.html">Refund & Cancellation Policy</a></li>
+          </ul>
+          <div style="margin-top: 1.25rem; font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+            <strong>Regd. Office:</strong><br>
+            AWAZME CONSULTING SERVICE<br>
+            Bandhamundi, Rasgobindapur, Mayurbhanj, Odisha 756030, India
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          © 2025 Automataiz. A Product of AWAZME CONSULTING SERVICE. All Rights Reserved. &nbsp;|&nbsp; <strong>GSTIN:</strong> 21BIIPK9304G1ZI
+        </div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <span><strong>Corp. Office:</strong> OMM City, Mancheswar, Bhubaneswar, Odisha 751010</span>
+          <span><strong>Phone:</strong> <a href="tel:+918338091603" style="color: inherit;">+91 83380 91603</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
