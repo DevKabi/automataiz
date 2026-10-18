@@ -160,22 +160,22 @@ function initPricingSwitcher() {
   const pricingData = {
     INR: {
       monthly: {
-        startup: { original: '₹7,999/mo', offer: '₹3,999', cycle: '/month (billed monthly)', savings: 'Save ₹4,000/mo' },
-        growth: { original: '₹9,999/mo', offer: '₹6,999', cycle: '/month (billed monthly)', savings: 'Save ₹3,000/mo' }
+        startup: { original: '₹15,999/mo', offer: '₹7,999', cycle: '/month (billed monthly)', savings: 'Save ₹8,000/mo' },
+        growth: { original: '₹19,999/mo', offer: '₹9,999', cycle: '/month (billed monthly)', savings: 'Save ₹10,000/mo' }
       },
       yearly: {
-        startup: { original: '₹95,988/yr', offer: '₹39,999', cycle: '/year (≈ ₹3,333/mo)', savings: 'Save ₹55,989' },
-        growth: { original: '₹119,988/yr', offer: '₹69,999', cycle: '/year (≈ ₹5,833/mo)', savings: 'Save ₹49,989' }
+        startup: { original: '₹1,91,988/yr', offer: '₹79,999', cycle: '/year (≈ ₹6,666/mo)', savings: 'Save ₹1,11,989' },
+        growth: { original: '₹2,39,988/yr', offer: '₹99,999', cycle: '/year (≈ ₹8,333/mo)', savings: 'Save ₹1,39,989' }
       }
     },
     USD: {
       monthly: {
-        startup: { original: '$99/mo', offer: '$49', cycle: '/month (billed monthly)', savings: 'Save $50/mo' },
-        growth: { original: '$129/mo', offer: '$85', cycle: '/month (billed monthly)', savings: 'Save $44/mo' }
+        startup: { original: '$199/mo', offer: '$99', cycle: '/month (billed monthly)', savings: 'Save $100/mo' },
+        growth: { original: '$249/mo', offer: '$129', cycle: '/month (billed monthly)', savings: 'Save $120/mo' }
       },
       yearly: {
-        startup: { original: '$1,188/yr', offer: '$489', cycle: '/year (≈ $40/mo)', savings: 'Save $699' },
-        growth: { original: '$1,548/yr', offer: '$849', cycle: '/year (≈ $70/mo)', savings: 'Save $699' }
+        startup: { original: '$2,388/yr', offer: '$989', cycle: '/year (≈ $82/mo)', savings: 'Save $1,399' },
+        growth: { original: '$2,988/yr', offer: '$1,289', cycle: '/year (≈ $107/mo)', savings: 'Save $1,699' }
       }
     }
   };
