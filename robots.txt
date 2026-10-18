@@ -4,4 +4,4 @@ Disallow: /debasish-kabi.html
 Disallow: /README.md
 Disallow: /.git/
 
-Sitemap: https://automataiz.com/sitemap.xml
+Sitemap: https://automataiz.in/sitemap.xml
